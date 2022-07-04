@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    margin-top: 7px;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.nav-link:hover{
+    color: aliceblue;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 130px;
+} 
+
+.nav-link:last-of-type{
+    margin-right: 40px;
+}
+
+@media (max-width: 800px){
+    nav > ul{
+        flex-direction: column;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+    .nav-link{
+        justify-content: space-between;
+    }
+    .logo{
+        
+    }
+}
+
+/*FINISH HEADER*/
+
+/*START WELCOME SECTION*/
+
+.About{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url("https://images.hdqwalls.com/download/python-programming-syntax-4k-1s-1024x768.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+h1{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    height: 600px;
+    top: 100px;
+    font-size: 80px;
+    display: block;
+    font-family: cursive;
+}
+
+.below{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: lightblue;
+    position: relative;
+    bottom: 380px;
+    right: 120px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.below:hover{
+    color: rgb(6, 100, 163);
+}
+
+@media (max-width: 500px){
+    .below{
+        font-size: 15px;
+        position: absolute;
+        top: 370px;
+        right: 200px;
+    }
+    h1{
+        font-size: 45px;
+    }
+}
+
+/*SECTION ABOUT FINISHED*/
+
+/*TITLES*/
+.titles{
+    color: lightblue;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 80px;
+    top: 50px;
+}
+
+.titles:hover{
+    color: white;
+}
+/*TITLES*/
+
+/*START SECTION PROJECTS*/
+
+.projects{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+        )
+    ,url("https://c4.wallpaperflare.com/wallpaper/632/34/549/technology-monitor-alpha-coders-binary-wallpaper-preview.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+}
+
+
+a{
+    text-decoration: none;
+    width: 70px;
+    padding-bottom: 100px;
+    transition: all 300ms;
+}
+
+a:hover{
+    transform: scale(1.15);
+}
+
+img{
+    max-height: 400px;
+    max-width: 450px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px){
+    img{
+        height: 320px;
+        width: 320px; 
+    }
+    .project-title{
+        width: 320px;
+    }
+    .project-tile{
+        width: 320px;
+    }
+    .projects-grid{
+        padding-left: 170px;
+    }
+}
+
+@media (min-width: 1000px){
+    .project-title{
+        width: 450px;
+    }
+    .project-tile{
+        width: 450px;
+    }
+    img{
+        width: 450px;
+    }
+}
+
+.project-title{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    max-width: 450px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.project-tile{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    max-width: 450px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+/*SECTION PROJECTS FINISHED*/
+
+/*SECTION CONTACT START*/
+
+.contact{
+    background-color: rgb(16, 16, 16);
+    margin: 0 auto;
+}
+
+.contact-title{
+    margin: 0 auto;
+    text-align: center;
+    color: lightblue;
+    font-size: 37px;
+    position: relative;
+    top:35px;
+}
+
+.contact-subtitle{
+    margin: 0 auto;
+    text-align: center;
+    color: lightblue;
+    font-size: 20px;
+    position: relative;
+    top: 45px
+}
+
+.social-icons{
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    padding-left: 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 100px;
+}
+
+.abc{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 30%;
+}
+
+/*SECTION CONTACT FINISHED*/
+
+/*SECTION COPYRIGHT START*/
+
+footer{
+    background-color: rgb(16, 16, 16);
+    text-align: right;
+    color: white;
+    margin: 0 auto;
+}
