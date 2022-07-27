@@ -41,8 +41,6 @@ nav > ul{
     color: black;
     font-weight: 600;
     font-size: 18px;
-    padding: 0px;
-    margin-left: 0px;
 } 
 
 .nav-link:last-of-type{
@@ -165,7 +163,7 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-content: center;
     align-items: center;
-    padding-left: 200px;
+    padding-left: 260px;
 }
 
 
@@ -177,14 +175,27 @@ a{
 }
 
 a:hover{
-    transform: scale(1.15);
+    transform: scale(1.02);
 }
 
 img{
     max-height: 400px;
-    max-width: 450px;
+    max-width: 400px;
     padding: 0;
     margin: 0 auto;
+}
+
+.project-image{
+    width: 350px;
+    height: 400px;
+}
+
+.project-title:first-of-type{
+    width: 350px;
+}
+
+.project-tile{
+    width: 350px;
 }
 
 @media (max-width: 800px){
@@ -231,7 +242,7 @@ img{
     margin: 0 auto;
     text-decoration: none;
     color: black;
-    max-width: 450px;
+    max-width: 350px;
     height: 30px;
     padding-top: 10px;
     font-size: 20px;
